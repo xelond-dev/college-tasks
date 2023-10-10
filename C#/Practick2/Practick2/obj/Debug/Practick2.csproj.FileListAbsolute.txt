@@ -1,0 +1,7 @@
+C:\Users\xelond\source\repos\Practick2\Practick2\bin\Debug\Practick2.exe.config
+C:\Users\xelond\source\repos\Practick2\Practick2\bin\Debug\Practick2.exe
+C:\Users\xelond\source\repos\Practick2\Practick2\bin\Debug\Practick2.pdb
+C:\Users\xelond\source\repos\Practick2\Practick2\obj\Debug\Practick2.csproj.AssemblyReference.cache
+C:\Users\xelond\source\repos\Practick2\Practick2\obj\Debug\Practick2.csproj.CoreCompileInputs.cache
+C:\Users\xelond\source\repos\Practick2\Practick2\obj\Debug\Practick2.exe
+C:\Users\xelond\source\repos\Practick2\Practick2\obj\Debug\Practick2.pdb
