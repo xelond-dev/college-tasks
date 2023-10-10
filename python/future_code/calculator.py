@@ -1,0 +1,10 @@
+first_number = int(input('Введите первое число: '))
+second_number = int(input('Введите второе число: '))
+
+print(f'Результат сложения: {first_number + second_number}')
+print(f'Результат вычитания: {first_number - second_number}')
+print(f'Результат умножения: {first_number * second_number}')
+print(f'Результат деления: {first_number / second_number}')
+print(f'Результат деления с остатком: {float(first_number /  second_number)}')
+print(f'Результат деление на цело: {first_number // second_number}')
+print(f'Результат возведения в степень: {first_number ** second_number}')

@@ -1,0 +1,7 @@
+C:\Users\xelond\source\repos\Piano\Piano\bin\Debug\Piano.exe.config
+C:\Users\xelond\source\repos\Piano\Piano\bin\Debug\Piano.exe
+C:\Users\xelond\source\repos\Piano\Piano\bin\Debug\Piano.pdb
+C:\Users\xelond\source\repos\Piano\Piano\obj\Debug\Piano.csproj.AssemblyReference.cache
+C:\Users\xelond\source\repos\Piano\Piano\obj\Debug\Piano.csproj.CoreCompileInputs.cache
+C:\Users\xelond\source\repos\Piano\Piano\obj\Debug\Piano.exe
+C:\Users\xelond\source\repos\Piano\Piano\obj\Debug\Piano.pdb
