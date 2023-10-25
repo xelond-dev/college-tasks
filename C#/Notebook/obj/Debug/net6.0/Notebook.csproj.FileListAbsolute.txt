@@ -1,0 +1,14 @@
+C:\Users\xelond\source\repos\Notebook\bin\Debug\net6.0\Notebook.exe
+C:\Users\xelond\source\repos\Notebook\bin\Debug\net6.0\Notebook.deps.json
+C:\Users\xelond\source\repos\Notebook\bin\Debug\net6.0\Notebook.runtimeconfig.json
+C:\Users\xelond\source\repos\Notebook\bin\Debug\net6.0\Notebook.dll
+C:\Users\xelond\source\repos\Notebook\bin\Debug\net6.0\Notebook.pdb
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.AssemblyInfoInputs.cache
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.AssemblyInfo.cs
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.csproj.CoreCompileInputs.cache
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.dll
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\refint\Notebook.dll
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.pdb
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\Notebook.genruntimeconfig.cache
+C:\Users\xelond\source\repos\Notebook\obj\Debug\net6.0\ref\Notebook.dll
