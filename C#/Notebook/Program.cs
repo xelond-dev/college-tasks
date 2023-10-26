@@ -84,7 +84,7 @@
 
                             noteIsDisplayed = true;
                         } else
-                        {l
+                        {
                             break;
                         }
 
