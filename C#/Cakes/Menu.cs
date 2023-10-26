@@ -8,43 +8,43 @@ namespace Cakes
 {
     internal class Menu
     {
-        private int maxPosition;
-        public Menu(int max)
-        {
-            maxPosition = max;
-        }
-
-        public int Show()
+        public static int Show(int maxPosition)
         {
             int position = 7;
+            maxPosition += position - 1;
 
             while (true)
             {
                 Console.SetCursorPosition(1, position);
-                Console.WriteLine("*");
+                Console.WriteLine("o");
+                Console.SetCursorPosition(1, position);
 
                 ConsoleKeyInfo KeyReader = Console.ReadKey();
 
                 switch (KeyReader.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        Console.SetCursorPosition(1, position);
-                        Console.WriteLine(" ");
-                        position--;
+                        if (position != 7)
+                        {
+                            Console.SetCursorPosition(1, position);
+                            Console.WriteLine(" ");
+                            position--;
+                        }
                         break;
 
                     case ConsoleKey.DownArrow:
-                        Console.SetCursorPosition(1, position);
-                        Console.WriteLine(" ");
-                        position++;
+                        if (position != maxPosition)
+                        {
+                            Console.SetCursorPosition(1, position);
+                            Console.WriteLine(" ");
+                            position++;
+                        }
                         break;
 
                     case ConsoleKey.Enter:
-
-                        break;
+                        return position - 7 + 1;
                 }
             }
-
 
         }
     }

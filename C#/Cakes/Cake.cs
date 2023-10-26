@@ -11,8 +11,8 @@ namespace Cakes
         public string form = "Круглый";
         public string size = "Средний";
         public string taste = "Клубничный";
-        public string glaze = "Кремовая";
-        public string decor = "Звездочки";
+        public string glaze = "Черная";
+        public string decor = "Звезды";
         public int count = 1;
     }
 }
