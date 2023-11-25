@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4+7Pi5DDRArvaX102lLzMGVUhLBjE1s4j1vkjb22j2VXIKfuyLARW1tW4moQDnsWcxyke7FvRsqF93hLxYk/aA==",
+  "success": true,
+  "projectFilePath": "/home/xelond/DotNetProjects/RapidTyping/RapidTyping/RapidTyping.csproj",
+  "expectedPackageFiles": [
+    "/home/xelond/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
