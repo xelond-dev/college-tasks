@@ -1,4 +1,5 @@
 import os, time, random
+import json
 import beepy
 
 
@@ -44,17 +45,29 @@ def user_choice(choices):
 
     return user_choice
 
-    
+def read_json():
+    with open('data.json', 'r') as file:
+        data = json.load(file)
+    return data
+
+def write_json(data):
+    with open('data.json', 'r') as file:
+        json.dump(data, file, indent=4)
+
+def append_json(data):
+    exist_data = read_json()
+    exist_data.update(data)
+    write_json(exist_data)
 
 display_text("Утро.", end_time=2)
 
-#call_alarm(3)
-#call_alarm(3)
+call_alarm(3)
+call_alarm(3)
 
 
 display_text("* Вы просыпаетесь от настойчивого звонка будильника.")
 
-#call_alarm(3, end_time=0)
+call_alarm(2, end_time=0)
 
 display_text("- Да завались ты уже.", sleep_time=0.02, end_time=2)
 display_text("* Вы выключаете будильник. *", end_time=2)
@@ -126,6 +139,15 @@ if (choice_user == 2):
 
     exit(0)
 
+display_text("Собираясь, вы увидили на столе билеты к вашему предмету.")
+choices = [
+    "Выучить 1-ый билет",
+    "Выучить 2-ый билет",
+    "Выучить 3-ый билет",
+    "* Проигнорировать *"
+]
+
+teach_ticket = user_choice(choices)
 
 display_text("Вы собираетесь и идете на пару.", end_time = 3)
 
@@ -146,12 +168,30 @@ if (choice_user == 1):
 
     random_ask = random.randint(1, 2)
 
-    if (random_ask == 1):
-        display_text("- Думаю, что вы мне и ответите, Лукьянов.")
-        display_text("< Отрицательный выбор >")
-    elif (random_ask == 2):
+    if (random_ask == 2):
         display_text("- Выйдите, если вам приспичело.")
         display_text("< Положительный выбор >")
+        display_text("< Хорошая концовка >")
+        exit(0)
 
-    display_text("")
+    display_text("- Думаю, что вы мне и ответите, Лукьянов.")
+    display_text("< Отрицательный выбор >")
+
+    display_text("* Вы понимаете, что ваш план не сработал. *")
     
+    random_ask = random.randint(1, 2)
+
+    if (random_ask == 1):
+        display_text("И так, думаю что вы ответите мне билет под номером..")
+        display_text(f"..билет номер {teach_ticket}.")
+        display_text("< Положительный выбор >")
+        display_text("Вы ответили на все вопросы преподователя и получили зачет.")
+        display_text("< Хорошая концовка >")
+        exit(0)
+    else:
+        display_text(f"..билет номер {teach_ticket + 1}.")
+        display_text("< Отрицательный выбор >")
+
+        display_text("К сожалению, вы не смогли ответить на билеты.")
+        display_text("< Плохая концовка >")
+        exit(0)
