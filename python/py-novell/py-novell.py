@@ -1,4 +1,4 @@
-import os, time
+import os, time, random
 import beepy
 
 
@@ -127,5 +127,31 @@ if (choice_user == 2):
     exit(0)
 
 
-display_text("Вы собираетесь и идете на пару.")
-display_text("")
+display_text("Вы собираетесь и идете на пару.", end_time = 3)
+
+display_text("Вы сидите на паре и стараетесь не привлекать внимания.")
+display_text("И последний, кто ответит сегодня, это..")
+display_text("* Вы начинаете переживать *")
+
+choices = [
+    "* Перебить преподователя и отпросится в туалет. *",
+    "* Надеется на лучшее. *",
+]
+
+choice_user = user_choice(choices)
+
+if (choice_user == 1):
+    display_text("- Извините пожалуйста, можно выйти?..")
+    display_text("* В аудитории наростает гробовая тишина. *")
+
+    random_ask = random.randint(1, 2)
+
+    if (random_ask == 1):
+        display_text("- Думаю, что вы мне и ответите, Лукьянов.")
+        display_text("< Отрицательный выбор >")
+    elif (random_ask == 2):
+        display_text("- Выйдите, если вам приспичело.")
+        display_text("< Положительный выбор >")
+
+    display_text("")
+    
