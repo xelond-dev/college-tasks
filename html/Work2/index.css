@@ -1,0 +1,18 @@
+body {
+    background-color: #2f2f2f;
+}
+
+audio, video {
+    height: 10%;
+    width:  100%;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    color: olive;
+    text-align: center;
+}
