@@ -1,0 +1,35 @@
+#include <iostream>
+
+int main() {
+    const int rows = 3;
+    const int cols = 5;
+    
+    // Ввод двумерного массива
+    double array[rows][cols];
+    
+    std::cout << "Введите элементы массива (3 строки по 5 элементов):\n";
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            std::cout << "Введите элемент array[" << i << "][" << j << "]: ";
+            std::cin >> array[i][j];
+        }
+    }
+
+    // Вычисление среднего арифметического элементов строк
+    double average[rows];
+    for (int i = 0; i < rows; ++i) {
+        double sum = 0.0;
+        for (int j = 0; j < cols; ++j) {
+            sum += array[i][j];
+        }
+        average[i] = sum / cols;
+    }
+
+    // Вывод среднего арифметического элементов строк
+    std::cout << "\nСредние арифметические элементов строк:\n";
+    for (int i = 0; i < rows; ++i) {
+        std::cout << "Среднее для строки " << i + 1 << ": " << average[i] << std::endl;
+    }
+
+    return 0;
+}
