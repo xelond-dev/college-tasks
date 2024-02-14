@@ -26,7 +26,7 @@ public class Main {
                 System.out.print("Введите количество '" + ingredients[i].replace(" ", "").toLowerCase() + "': ");
                 ingredientsWeight[i] = scanner.nextLine();
 
-                writer.append("Количество '" + ingredients[i] + "': " + ingredientsWeight[i] + "\n\n\n");
+                writer.append("Количество '" + ingredients[i] + "': " + ingredientsWeight[i] + "\n");
             }
 
             writer.flush();
