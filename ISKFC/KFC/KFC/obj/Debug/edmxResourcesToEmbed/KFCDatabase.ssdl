@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище KFCModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID_Order" />
+    </Key>
+    <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Payment_Method_ID" Type="int" />
+    <Property Name="Order_Date" Type="date" />
+    <Property Name="Order_Time" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="Payment_Methods">
+    <Key>
+      <PropertyRef Name="ID_Payment_Method" />
+    </Key>
+    <Property Name="ID_Payment_Method" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Payment_Type" Type="varchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID_Product" />
+    </Key>
+    <Property Name="ID_Product" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Product_Name" Type="varchar" MaxLength="48" Nullable="false" />
+    <Property Name="Amount_In_Storage" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductSelling">
+    <Key>
+      <PropertyRef Name="ID_Selling" />
+    </Key>
+    <Property Name="ID_Selling" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Product_ID" Type="int" />
+    <Property Name="Order_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "KFC.dbo.View_Orders" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="View_Orders">
+    <Key>
+      <PropertyRef Name="Номер_заказа" />
+    </Key>
+    <Property Name="Номер_заказа" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Номер_платежного_метода" Type="int" />
+    <Property Name="Дата_заказа" Type="date" />
+    <Property Name="Время_заказа" Type="time" Precision="7" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "KFC.dbo.View_Payment_Methods" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="View_Payment_Methods">
+    <Key>
+      <PropertyRef Name="Номер платежного метода" />
+      <PropertyRef Name="Тип платежа" />
+    </Key>
+    <Property Name="Номер платежного метода" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Тип платежа" Type="varchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "KFC.dbo.View_Products" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="View_Products">
+    <Key>
+      <PropertyRef Name="Номер_продукта" />
+      <PropertyRef Name="Название_продукта" />
+      <PropertyRef Name="Количество_на_складе" />
+      <PropertyRef Name="Цена" />
+    </Key>
+    <Property Name="Номер_продукта" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Название_продукта" Type="varchar" MaxLength="48" Nullable="false" />
+    <Property Name="Количество_на_складе" Type="int" Nullable="false" />
+    <Property Name="Цена" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "KFC.dbo.View_ProductSelling" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="View_ProductSelling">
+    <Key>
+      <PropertyRef Name="Номер_продажи" />
+    </Key>
+    <Property Name="Номер_продажи" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Номер_продукта" Type="int" />
+    <Property Name="Номер_заказа" Type="int" />
+  </EntityType>
+  <Association Name="FK__Orders__Payment___4BAC3F29">
+    <End Role="Payment_Methods" Type="Self.Payment_Methods" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_Methods">
+        <PropertyRef Name="ID_Payment_Method" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Payment_Method_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductSe__Order__5165187F">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+    <End Role="ProductSelling" Type="Self.ProductSelling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="ID_Order" />
+      </Principal>
+      <Dependent Role="ProductSelling">
+        <PropertyRef Name="Order_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductSe__Produ__5070F446">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductSelling" Type="Self.ProductSelling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="ProductSelling">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище KFCModelContainer">
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payment_Methods" EntityType="Self.Payment_Methods" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSelling" EntityType="Self.ProductSelling" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="View_Orders" EntityType="Self.View_Orders" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Orders].[Номер_заказа] AS [Номер_заказа], 
+    [View_Orders].[Номер_платежного_метода] AS [Номер_платежного_метода], 
+    [View_Orders].[Дата_заказа] AS [Дата_заказа], 
+    [View_Orders].[Время_заказа] AS [Время_заказа]
+    FROM [dbo].[View_Orders] AS [View_Orders]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Payment_Methods" EntityType="Self.View_Payment_Methods" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Payment_Methods].[Номер платежного метода] AS [Номер платежного метода], 
+    [View_Payment_Methods].[Тип платежа] AS [Тип платежа]
+    FROM [dbo].[View_Payment_Methods] AS [View_Payment_Methods]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Products" EntityType="Self.View_Products" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Products].[Номер_продукта] AS [Номер_продукта], 
+    [View_Products].[Название_продукта] AS [Название_продукта], 
+    [View_Products].[Количество_на_складе] AS [Количество_на_складе], 
+    [View_Products].[Цена] AS [Цена]
+    FROM [dbo].[View_Products] AS [View_Products]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ProductSelling" EntityType="Self.View_ProductSelling" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ProductSelling].[Номер_продажи] AS [Номер_продажи], 
+    [View_ProductSelling].[Номер_продукта] AS [Номер_продукта], 
+    [View_ProductSelling].[Номер_заказа] AS [Номер_заказа]
+    FROM [dbo].[View_ProductSelling] AS [View_ProductSelling]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Orders__Payment___4BAC3F29" Association="Self.FK__Orders__Payment___4BAC3F29">
+      <End Role="Payment_Methods" EntitySet="Payment_Methods" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductSe__Order__5165187F" Association="Self.FK__ProductSe__Order__5165187F">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="ProductSelling" EntitySet="ProductSelling" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductSe__Produ__5070F446" Association="Self.FK__ProductSe__Produ__5070F446">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductSelling" EntitySet="ProductSelling" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
