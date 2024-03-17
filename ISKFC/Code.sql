@@ -60,8 +60,7 @@ AS
 SELECT 
     ID_Order AS 'Номер_заказа',
     Payment_Method_ID AS 'Номер_платежного_метода',
-    Order_Date AS 'Дата_заказа',
-    Order_Time AS 'Время_заказа'
+    Order_Date AS 'Дата_заказа'
 FROM Orders;
 GO
 

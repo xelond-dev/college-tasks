@@ -17,6 +17,5 @@ namespace KFC
         public int Номер_заказа { get; set; }
         public Nullable<int> Номер_платежного_метода { get; set; }
         public Nullable<System.DateTime> Дата_заказа { get; set; }
-        public Nullable<System.TimeSpan> Время_заказа { get; set; }
     }
 }

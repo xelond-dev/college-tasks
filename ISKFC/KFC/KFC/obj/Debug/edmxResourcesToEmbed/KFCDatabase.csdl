@@ -30,7 +30,6 @@
     <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Payment_Method_ID" Type="Int32" />
     <Property Name="Order_Date" Type="DateTime" Precision="0" />
-    <Property Name="Order_Time" Type="Time" Precision="7" />
     <NavigationProperty Name="Payment_Methods" Relationship="KFCModel.FK__Orders__Payment___4BAC3F29" FromRole="Orders" ToRole="Payment_Methods" />
     <NavigationProperty Name="ProductSelling" Relationship="KFCModel.FK__ProductSe__Order__5165187F" FromRole="Orders" ToRole="ProductSelling" />
   </EntityType>
@@ -123,7 +122,6 @@
     <Property Name="Номер_заказа" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Номер_платежного_метода" Type="Int32" />
     <Property Name="Дата_заказа" Type="DateTime" Precision="0" />
-    <Property Name="Время_заказа" Type="Time" Precision="7" />
   </EntityType>
   <EntityType Name="View_Products">
     <Key>

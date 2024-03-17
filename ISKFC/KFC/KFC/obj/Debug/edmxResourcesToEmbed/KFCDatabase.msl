@@ -4,7 +4,6 @@
     <EntitySetMapping Name="Orders">
       <EntityTypeMapping TypeName="KFCModel.Orders">
         <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
           <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
           <ScalarProperty Name="Payment_Method_ID" ColumnName="Payment_Method_ID" />
           <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
@@ -60,7 +59,6 @@
     <EntitySetMapping Name="View_Orders">
       <EntityTypeMapping TypeName="KFCModel.View_Orders">
         <MappingFragment StoreEntitySet="View_Orders">
-          <ScalarProperty Name="Время_заказа" ColumnName="Время_заказа" />
           <ScalarProperty Name="Дата_заказа" ColumnName="Дата_заказа" />
           <ScalarProperty Name="Номер_платежного_метода" ColumnName="Номер_платежного_метода" />
           <ScalarProperty Name="Номер_заказа" ColumnName="Номер_заказа" />

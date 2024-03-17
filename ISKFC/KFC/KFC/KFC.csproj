@@ -67,6 +67,9 @@
     <Compile Include="DataSetWindow.xaml.cs">
       <DependentUpon>DataSetWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KFCDataSet.cs">
+      <DependentUpon>KFCDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="KFCDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

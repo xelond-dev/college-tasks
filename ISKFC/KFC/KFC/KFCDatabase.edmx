@@ -12,7 +12,6 @@
           <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Payment_Method_ID" Type="int" />
           <Property Name="Order_Date" Type="date" />
-          <Property Name="Order_Time" Type="time" Precision="7" />
         </EntityType>
         <EntityType Name="Payment_Methods">
           <Key>
@@ -57,7 +56,6 @@
           <Property Name="Номер_заказа" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Номер_платежного_метода" Type="int" />
           <Property Name="Дата_заказа" Type="date" />
-          <Property Name="Время_заказа" Type="time" Precision="7" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
 предупреждение 6002: В таблице или представлении "KFC.dbo.View_Payment_Methods" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
@@ -139,8 +137,7 @@
             <DefiningQuery>SELECT 
     [View_Orders].[Номер_заказа] AS [Номер_заказа], 
     [View_Orders].[Номер_платежного_метода] AS [Номер_платежного_метода], 
-    [View_Orders].[Дата_заказа] AS [Дата_заказа], 
-    [View_Orders].[Время_заказа] AS [Время_заказа]
+    [View_Orders].[Дата_заказа] AS [Дата_заказа]
     FROM [dbo].[View_Orders] AS [View_Orders]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="View_Payment_Methods" EntityType="Self.View_Payment_Methods" store:Type="Views" store:Schema="dbo">
@@ -211,7 +208,6 @@
           <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Payment_Method_ID" Type="Int32" />
           <Property Name="Order_Date" Type="DateTime" Precision="0" />
-          <Property Name="Order_Time" Type="Time" Precision="7" />
           <NavigationProperty Name="Payment_Methods" Relationship="KFCModel.FK__Orders__Payment___4BAC3F29" FromRole="Orders" ToRole="Payment_Methods" />
           <NavigationProperty Name="ProductSelling" Relationship="KFCModel.FK__ProductSe__Order__5165187F" FromRole="Orders" ToRole="ProductSelling" />
         </EntityType>
@@ -304,7 +300,6 @@
           <Property Name="Номер_заказа" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Номер_платежного_метода" Type="Int32" />
           <Property Name="Дата_заказа" Type="DateTime" Precision="0" />
-          <Property Name="Время_заказа" Type="Time" Precision="7" />
         </EntityType>
         <EntityType Name="View_Products">
           <Key>
@@ -335,7 +330,6 @@
           <EntitySetMapping Name="Orders">
             <EntityTypeMapping TypeName="KFCModel.Orders">
               <MappingFragment StoreEntitySet="Orders">
-                <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
                 <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
                 <ScalarProperty Name="Payment_Method_ID" ColumnName="Payment_Method_ID" />
                 <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
@@ -391,7 +385,6 @@
           <EntitySetMapping Name="View_Orders">
             <EntityTypeMapping TypeName="KFCModel.View_Orders">
               <MappingFragment StoreEntitySet="View_Orders">
-                <ScalarProperty Name="Время_заказа" ColumnName="Время_заказа" />
                 <ScalarProperty Name="Дата_заказа" ColumnName="Дата_заказа" />
                 <ScalarProperty Name="Номер_платежного_метода" ColumnName="Номер_платежного_метода" />
                 <ScalarProperty Name="Номер_заказа" ColumnName="Номер_заказа" />

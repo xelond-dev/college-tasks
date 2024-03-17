@@ -23,7 +23,6 @@ namespace KFC
         public int ID_Order { get; set; }
         public Nullable<int> Payment_Method_ID { get; set; }
         public Nullable<System.DateTime> Order_Date { get; set; }
-        public Nullable<System.TimeSpan> Order_Time { get; set; }
     
         public virtual Payment_Methods Payment_Methods { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
