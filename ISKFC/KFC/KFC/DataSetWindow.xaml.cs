@@ -145,7 +145,33 @@ namespace KFC
 
         private void EditButtonClick(object sender, RoutedEventArgs e)
         {
+            string selectedCbx = CurrentTableCbx.Items[CurrentTableCbx.SelectedIndex] as string;
+            object id = (OrdersGrd.SelectedItem as DataRowView).Row[0];
 
+            if (OrdersGrd.SelectedItem != null)
+            {
+                if (selectedCbx == "Заказы" && tbx1.Text != null && tbx2.Text != null)
+                {
+                    ordersTableAdapter.UpdateQuery(Convert.ToInt32(tbx1.Text), tbx2.Text, Convert.ToInt32(id));
+                    OrdersGrd.ItemsSource = orders.GetData();
+
+                }
+                else if (selectedCbx == "Товары" && tbx1.Text != null && tbx2.Text != null && tbx3.Text != null)
+                {
+                    productsTableAdapter.UpdateQuery(tbx1.Text, Convert.ToInt32(tbx2.Text), Convert.ToInt32(tbx3.Text), Convert.ToInt32(id));
+                    OrdersGrd.ItemsSource = productSelling.GetData();
+                }
+                else if (selectedCbx == "Продажа продукта" && tbx1.Text != null && tbx2.Text != null)
+                {
+                    productSellingAdapter.UpdateQuery(Convert.ToInt32(tbx1.Text), Convert.ToInt32(tbx2.Text), Convert.ToInt32(id));
+                    OrdersGrd.ItemsSource = productSelling.GetData();
+                }
+                else if (selectedCbx == "Способы оплаты" && tbx1.Text != null)
+                {
+                    payment_MethodsTableAdapter.UpdateQuery(tbx1.Text, Convert.ToInt32(id));
+                    OrdersGrd.ItemsSource = paymentMethods.GetData();
+                }
+            }
         }
 
         private void RemoveButtonClick(object sender, RoutedEventArgs e)
@@ -159,7 +185,6 @@ namespace KFC
                 if (selectedCbx == "Заказы")
                 {
                     ordersTableAdapter.DeleteQuery(Convert.ToInt32(id));
-
                     OrdersGrd.ItemsSource = orders.GetData();
                 }
                 else if (selectedCbx == "Товары")

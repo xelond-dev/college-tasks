@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\K\\source\\repos\\KFC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|c:\\users\\k\\source\\repos\\kfc\\kfc\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|c:\\users\\k\\source\\repos\\kfc\\kfc\\kfcdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\kfcdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|c:\\users\\k\\source\\repos\\kfc\\kfc\\kfcdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\kfcdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\kfcdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|c:\\users\\k\\source\\repos\\kfc\\kfc\\kfcdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\kfcdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\datasetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -29,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\kfcdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\kfcdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|c:\\users\\k\\source\\repos\\kfc\\kfc\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|C:\\Users\\K\\source\\repos\\KFC\\kfc\\kfcdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8F2D7386-32C9-441F-B3E6-508E5AE2E9AE}|KFC\\KFC.csproj|solutionrelative:kfc\\kfcdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "DataSetWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\DataSetWindow.xaml.cs",
               "RelativeDocumentMoniker": "KFC\\DataSetWindow.xaml.cs",
               "ToolTip": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\DataSetWindow.xaml.cs",
               "RelativeToolTip": "KFC\\DataSetWindow.xaml.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAhwIIAAABRAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAMwJcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T05:45:15.311Z",
               "IsPinned": true,
@@ -56,20 +56,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "KFC\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\MainWindow.xaml.cs",
               "RelativeToolTip": "KFC\\MainWindow.xaml.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAwwFIAAAAqAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwN4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T15:52:05.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "KFCDataSet.Designer.cs",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\KFCDataSet.Designer.cs",
               "RelativeDocumentMoniker": "KFC\\KFCDataSet.Designer.cs",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "KFCDataSet.xsd",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\KFCDataSet.xsd",
               "RelativeDocumentMoniker": "KFC\\KFCDataSet.xsd",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\MainWindow.xaml",
               "RelativeDocumentMoniker": "KFC\\MainWindow.xaml",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "DataSetWindow.xaml",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\DataSetWindow.xaml",
               "RelativeDocumentMoniker": "KFC\\DataSetWindow.xaml",
@@ -118,15 +118,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "KFCDatabase.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\KFCDatabase.edmx",
               "RelativeDocumentMoniker": "KFC\\KFCDatabase.edmx",
               "ToolTip": "C:\\Users\\K\\source\\repos\\KFC\\KFC\\KFCDatabase.edmx [Diagram1]",
               "RelativeToolTip": "KFC\\KFCDatabase.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-03-17T17:49:31.457Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-03-17T17:49:31.457Z"
             }
           ]
         }

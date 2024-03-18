@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KFC.KFCDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -230,7 +231,38 @@ namespace KFC
 
         private void Orders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            string selectedCbx = CurrentTableCbx.Items[CurrentTableCbx.SelectedIndex] as string;
 
+            if (OrdersGrd.SelectedItem != null)
+            {
+                if (selectedCbx == "Заказы")
+                {
+                    var selected = OrdersGrd.SelectedItem as Orders;
+                    tbx1.Text = selected.Payment_Method_ID.ToString();
+                    tbx2.Text = selected.Order_Date.ToString();
+                }
+                else if (selectedCbx == "Товары")
+                {
+                    var selected = OrdersGrd.SelectedItem as Products;
+                    tbx1.Text = selected.Product_Name;
+                    tbx2.Text = selected.Amount_In_Storage.ToString();
+                    tbx3.Text = selected.Price.ToString();
+
+                }
+                else if (selectedCbx == "Продажа продукта")
+                {
+                    var selected = OrdersGrd.SelectedItem as ProductSelling;
+                    tbx1.Text = selected.Product_ID.ToString();
+                    tbx2.Text = selected.Order_ID.ToString();
+                }
+                else if (selectedCbx == "Способы оплаты")
+                {
+                    var selected = OrdersGrd.SelectedItem as Payment_Methods;
+                    tbx1.Text = selected.Payment_Type;
+
+                }
+
+            }
         }
     }
 }
