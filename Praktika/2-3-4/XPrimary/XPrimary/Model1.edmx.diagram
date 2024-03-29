@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c17bb35ba674ad68e8aee2c2be0beea" Name="Diagram1">
+        <EntityTypeShape EntityType="XPrimaryModel.Orders" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.Payment_Methods" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.Products" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.ProductSelling" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.vw_Orders" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.vw_Payment_Methods" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.vw_Products" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XPrimaryModel.vw_ProductSelling" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="XPrimaryModel.FK__Orders__Payment___4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="XPrimaryModel.FK__ProductSe__Order__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="XPrimaryModel.FK__ProductSe__Produ__5070F446" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

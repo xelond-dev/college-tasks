@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XPrimaryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID_Order" />
+    </Key>
+    <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Method_ID" Type="Int32" />
+    <Property Name="Order_Date" Type="DateTime" Precision="0" />
+    <Property Name="Order_Time" Type="Time" Precision="7" />
+    <NavigationProperty Name="Payment_Methods" Relationship="Self.FK__Orders__Payment___4BAC3F29" FromRole="Orders" ToRole="Payment_Methods" />
+    <NavigationProperty Name="ProductSelling" Relationship="Self.FK__ProductSe__Order__5165187F" FromRole="Orders" ToRole="ProductSelling" />
+  </EntityType>
+  <EntityType Name="Payment_Methods">
+    <Key>
+      <PropertyRef Name="ID_Payment_Method" />
+    </Key>
+    <Property Name="ID_Payment_Method" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Type" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Payment___4BAC3F29" FromRole="Payment_Methods" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID_Product" />
+    </Key>
+    <Property Name="ID_Product" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_Name" Type="String" MaxLength="48" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Amount_In_Storage" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductSelling" Relationship="Self.FK__ProductSe__Produ__5070F446" FromRole="Products" ToRole="ProductSelling" />
+  </EntityType>
+  <EntityType Name="ProductSelling">
+    <Key>
+      <PropertyRef Name="ID_Selling" />
+    </Key>
+    <Property Name="ID_Selling" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_ID" Type="Int32" />
+    <Property Name="Order_ID" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__ProductSe__Order__5165187F" FromRole="ProductSelling" ToRole="Orders" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__ProductSe__Produ__5070F446" FromRole="ProductSelling" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="vw_Orders">
+    <Key>
+      <PropertyRef Name="ID_Order" />
+    </Key>
+    <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Method_ID" Type="Int32" />
+    <Property Name="Order_Date" Type="DateTime" Precision="0" />
+    <Property Name="Order_Time" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityType Name="vw_Payment_Methods">
+    <Key>
+      <PropertyRef Name="ID_Payment_Method" />
+      <PropertyRef Name="Payment_Type" />
+    </Key>
+    <Property Name="ID_Payment_Method" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Payment_Type" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_Products">
+    <Key>
+      <PropertyRef Name="ID_Product" />
+      <PropertyRef Name="Product_Name" />
+      <PropertyRef Name="Amount_In_Storage" />
+      <PropertyRef Name="Price" />
+    </Key>
+    <Property Name="ID_Product" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_Name" Type="String" MaxLength="48" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Amount_In_Storage" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_ProductSelling">
+    <Key>
+      <PropertyRef Name="ID_Selling" />
+      <PropertyRef Name="Quantity" />
+    </Key>
+    <Property Name="ID_Selling" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_ID" Type="Int32" />
+    <Property Name="Order_ID" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Orders__Payment___4BAC3F29">
+    <End Role="Payment_Methods" Type="Self.Payment_Methods" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_Methods">
+        <PropertyRef Name="ID_Payment_Method" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Payment_Method_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductSe__Order__5165187F">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+    <End Role="ProductSelling" Type="Self.ProductSelling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="ID_Order" />
+      </Principal>
+      <Dependent Role="ProductSelling">
+        <PropertyRef Name="Order_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductSe__Produ__5070F446">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductSelling" Type="Self.ProductSelling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ID_Product" />
+      </Principal>
+      <Dependent Role="ProductSelling">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="XPrimaryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="Payment_Methods" EntityType="Self.Payment_Methods" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="ProductSelling" EntityType="Self.ProductSelling" />
+    <EntitySet Name="vw_Orders" EntityType="Self.vw_Orders" />
+    <EntitySet Name="vw_Payment_Methods" EntityType="Self.vw_Payment_Methods" />
+    <EntitySet Name="vw_Products" EntityType="Self.vw_Products" />
+    <EntitySet Name="vw_ProductSelling" EntityType="Self.vw_ProductSelling" />
+    <AssociationSet Name="FK__Orders__Payment___4BAC3F29" Association="Self.FK__Orders__Payment___4BAC3F29">
+      <End Role="Payment_Methods" EntitySet="Payment_Methods" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductSe__Order__5165187F" Association="Self.FK__ProductSe__Order__5165187F">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="ProductSelling" EntitySet="ProductSelling" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductSe__Produ__5070F446" Association="Self.FK__ProductSe__Produ__5070F446">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductSelling" EntitySet="ProductSelling" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

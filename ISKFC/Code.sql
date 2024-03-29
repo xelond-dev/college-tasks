@@ -36,6 +36,42 @@ CREATE TABLE ProductSelling (
 );
 GO
 
+
+DROP TABLE ProductSelling
+DROP TABLE Products
+DROP TABLE Orders
+DROP TABLE Payment_Methods
+
+CREATE TRIGGER tgr_delete_product
+ON Products
+INSTEAD OF DELETE
+AS
+BEGIN
+	DELETE FROM ProductSelling WHERE Product_ID IN (SELECT ID_Product FROM deleted);
+	DELETE FROM Products WHERE ID_Product IN (SELECT ID_Product FROM deleted);
+END;
+
+CREATE TRIGGER tgr_delete_order
+ON Orders
+INSTEAD OF DELETE
+AS
+BEGIN
+	DELETE FROM ProductSelling WHERE Order_ID IN (SELECT ID_Order FROM deleted);
+	DELETE FROM Orders WHERE ID_Order IN (SELECT ID_Order FROM deleted);
+END;
+
+CREATE TRIGGER tgr_delete_payment_method
+ON Payment_Methods
+INSTEAD OF DELETE
+AS
+BEGIN
+	DELETE FROM Orders WHERE Payment_Method_ID IN (SELECT ID_Payment_Method FROM deleted);
+	DELETE FROM Payment_Methods WHERE ID_Payment_Method IN (SELECT ID_Payment_Method FROM deleted);
+END;
+
+
+
+
 INSERT INTO Payment_Methods (Payment_Type) VALUES ('Наличные'), ('Карта'), ('Биткоин')
 GO
 
@@ -50,35 +86,82 @@ GO
 
 CREATE VIEW View_Payment_Methods AS
 SELECT 
-    ID_Payment_Method AS 'Номер_платежного_метода',
-    Payment_Type AS 'Тип_платежа'
+    ID_Payment_Method AS 'ID_Payment_Method',
+    Payment_Type AS 'Payment_Type'
 FROM Payment_Methods;
 GO
 
 CREATE VIEW View_Orders 
 AS
 SELECT 
-    ID_Order AS 'Номер_заказа',
-    Payment_Method_ID AS 'Номер_платежного_метода',
-    Order_Date AS 'Дата_заказа'
+    ID_Order AS 'ID_Order',
+    Payment_Method_ID AS 'Payment_Method_ID',
+    Order_Date AS 'Order_Date'
 FROM Orders;
 GO
 
 CREATE VIEW View_Products 
 AS
 SELECT 
-    ID_Product AS 'Номер_продукта',
-    Product_Name AS 'Название_продукта',
-    Amount_In_Storage AS 'Количество_на_складе',
-    Price AS 'Цена'
+    ID_Product AS 'ID_Product',
+    Product_Name AS 'Product_Name',
+    Amount_In_Storage AS 'Amount_In_Storage',
+    Price AS 'Price'
 FROM Products;
 GO
 
 CREATE VIEW View_ProductSelling 
 AS
 SELECT 
-    ID_Selling AS 'Номер_продажи',
-    Product_ID AS 'Номер_продукта',
-    Order_ID AS 'Номер_заказа'
+    ID_Selling AS 'ID_Selling',
+    Product_ID AS 'Product_ID',
+    Order_ID AS 'Order_ID'
 FROM ProductSelling;
 GO
+
+DROP VIEW View_Payment_Methods
+DROP VIEW View_Orders
+DROP VIEW View_Products
+DROP VIEW View_ProductSelling
+
+SELECT 
+    O.ID_Order,
+    O.Order_Date,
+    O.Order_Time,
+    PM.Payment_Type,
+    PS.Quantity,
+    P.Product_Name,
+    P.Amount_In_Storage,
+    P.Price
+FROM 
+    Orders O
+INNER JOIN 
+    Payment_Methods PM ON O.Payment_Method_ID = PM.ID_Payment_Method
+INNER JOIN 
+    ProductSelling PS ON O.ID_Order = PS.Order_ID
+INNER JOIN 
+    Products P ON PS.Product_ID = P.ID_Product;
+
+	SELECT 
+    O.ID_Order,
+    O.Order_Date,
+    O.Order_Time,
+    PM.Payment_Type,
+    PS.Quantity,
+    P.Product_Name,
+    P.Amount_In_Storage,
+    P.Price
+FROM 
+ INNER JOIN 
+    Payment_Methods PM ON O.Payment_Method_ID = PM.ID_Payment_Method
+INNER JOIN 
+    ProductSelling PS ON O.ID_Order = PS.Order_ID
+INNER JOIN 
+    Products P ON PS.Product_ID = P.ID_Product;
+
+
+
+SELECT * FROM Orders 
+INNER JOIN Payment_Methods ON Orders.Payment_Method_ID = Payment_Methods.ID_Payment_Method 
+INNER JOIN ProductSelling ON Orders.ID_Order = ProductSelling.Order_ID 
+INNER JOIN Products ON ProductSelling.Product_ID = Products.ID_Product

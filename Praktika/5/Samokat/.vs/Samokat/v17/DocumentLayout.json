@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\K\\source\\repos\\Samokat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|c:\\users\\k\\source\\repos\\samokat\\tableview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:tableview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\create_user_employee_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:create_user_employee_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\samokatdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:samokatdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\create_user_employee_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:create_user_employee_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\initializationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:initializationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\samokatdataset.xss||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:samokatdataset.xss||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\samokatdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:samokatdataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\initializationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:initializationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\tableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:tableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|C:\\Users\\K\\source\\repos\\Samokat\\controlwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE658547-D9B4-4E9B-B79D-21DCA83FCBE3}|Samokat.csproj|solutionrelative:controlwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TableView.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\TableView.xaml",
+              "RelativeDocumentMoniker": "TableView.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\TableView.xaml",
+              "RelativeToolTip": "TableView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T12:37:37.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TableView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\TableView.xaml.cs",
+              "RelativeDocumentMoniker": "TableView.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\TableView.xaml.cs",
+              "RelativeToolTip": "TableView.xaml.cs",
+              "ViewState": "AQIAANcBAAAAAAAAAAAwwFkCAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T07:35:33.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InitializationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\InitializationWindow.xaml",
+              "RelativeDocumentMoniker": "InitializationWindow.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\InitializationWindow.xaml",
+              "RelativeToolTip": "InitializationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T12:37:02.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SamokatDataSet.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.Designer.cs",
+              "RelativeDocumentMoniker": "SamokatDataSet.Designer.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.Designer.cs",
+              "RelativeToolTip": "SamokatDataSet.Designer.cs",
+              "ViewState": "AQIAALcqAAAAAAAAAAAjwM4qAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T09:50:51.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Security.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\Security.cs",
+              "RelativeDocumentMoniker": "Security.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\Security.cs",
+              "RelativeToolTip": "Security.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T11:49:55.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SamokatDataSet.xss",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.xss",
+              "RelativeDocumentMoniker": "SamokatDataSet.xss",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.xss",
+              "RelativeToolTip": "SamokatDataSet.xss",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVDhPpZIxDoIwFIYfbsAiNxBu4KKwMnMBmDyCJxFXndy4AHcgunADdGdAE4EwVV4pWqEgiV/y0uZ/7Z\u002B\u002B1wdjlGW5KYoiroN0IsYcEEIkdrZHfchPkmQbRREEQcDUBtd1wbIsMAxjz6Rvsiybp2lKDocjuWcPYfg7n75mxu4IyfOc7fo8WW6sBOI4DugLHVbrNVMbLuczXG9XCMPw2wAvse0bNBkCDXol4IU2pjDagyn0DPBZ/PoLaoC1i\u002BpH0EhkpqoqXWkT244PgQZ83jRN8DzvM0hoYNs2P6rvGNCbUa6ZoUBdOBRFEc5HVVUa5upYyrJ8Qo32oH1et4yurmnanW44/v5GaaiEaaUBvACMFdHTTBiv\u002BAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-03-28T11:49:54.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InitializationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\InitializationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "InitializationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\InitializationWindow.xaml.cs",
+              "RelativeToolTip": "InitializationWindow.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwDcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T11:49:49.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create_User_Employee_Window.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\Create_User_Employee_Window.xaml.cs",
+              "RelativeDocumentMoniker": "Create_User_Employee_Window.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\Create_User_Employee_Window.xaml.cs",
+              "RelativeToolTip": "Create_User_Employee_Window.xaml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T11:12:33.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create_User_Employee_Window.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\Create_User_Employee_Window.xaml",
+              "RelativeDocumentMoniker": "Create_User_Employee_Window.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\Create_User_Employee_Window.xaml",
+              "RelativeToolTip": "Create_User_Employee_Window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T11:12:28.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ControlWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\ControlWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ControlWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\ControlWindow.xaml.cs",
+              "RelativeToolTip": "ControlWindow.xaml.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAA3wCsAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:12:02.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SamokatDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.xsd",
+              "RelativeDocumentMoniker": "SamokatDataSet.xsd",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\Samokat\\SamokatDataSet.xsd",
+              "RelativeToolTip": "SamokatDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-03-28T02:20:40.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
