@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GakmMN697F/woImOT065MDqy+McpqYbVQ/uKLYA0GwQ1s82wiKdm8jhHUFe5b/REmPC5oN7Y5rsLATTYUdFt9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erton\\source\\repos\\balbes0\\Praktosik_4\\Praktosik_4\\Praktosik_4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
