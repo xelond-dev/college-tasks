@@ -1,0 +1,27 @@
+﻿<Window x:Class="Praktos5.View.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktos5.View"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="42.5*"/>
+                <ColumnDefinition Width="42.5*"/>
+            </Grid.ColumnDefinitions>
+            <Button Command="{Binding ExitCommand}">Выйти</Button>
+            <Button Command="{Binding TakeCommand}" Grid.Column="1">Пройти тест</Button>
+            <Button Command="{Binding EditCommand}" Grid.Column="2" Visibility="{Binding _buttonVisibility}">Редактировать тест</Button>
+        </Grid>
+        <Frame Content="{Binding PageFrame}" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
+    </Grid>
+</Window>
