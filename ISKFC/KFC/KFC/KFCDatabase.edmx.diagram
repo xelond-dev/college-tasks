@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="55ce5619744e43ceb0e622deaccd5471" Name="Diagram1" >
+        <EntityTypeShape EntityType="KFCModel.Orders" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="KFCModel.Payment_Methods" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="KFCModel.Products" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="KFCModel.ProductSelling" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="KFCModel.sysdiagrams" Width="1.5" PointX="7.25" PointY="5.375" />
+        <AssociationConnector Association="KFCModel.FK__Orders__Payment___4BAC3F29" />
+        <AssociationConnector Association="KFCModel.FK__ProductSe__Order__5165187F" />
+        <AssociationConnector Association="KFCModel.FK__ProductSe__Produ__5070F446" />
+        <EntityTypeShape EntityType="KFCModel.View_Payment_Methods" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="KFCModel.View_Orders" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="KFCModel.View_Products" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="KFCModel.View_ProductSelling" Width="1.5" PointX="4.75" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

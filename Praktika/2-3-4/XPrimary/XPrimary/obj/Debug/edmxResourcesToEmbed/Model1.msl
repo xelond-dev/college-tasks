@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище XPrimaryModelContainer" CdmEntityContainer="XPrimaryEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="XPrimaryModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="Payment_Method_ID" ColumnName="Payment_Method_ID" />
+          <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
+          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment_Methods">
+      <EntityTypeMapping TypeName="XPrimaryModel.Payment_Methods">
+        <MappingFragment StoreEntitySet="Payment_Methods">
+          <ScalarProperty Name="ID_Payment_Method" ColumnName="ID_Payment_Method" />
+          <ScalarProperty Name="Payment_Type" ColumnName="Payment_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="XPrimaryModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Amount_In_Storage" ColumnName="Amount_In_Storage" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSelling">
+      <EntityTypeMapping TypeName="XPrimaryModel.ProductSelling">
+        <MappingFragment StoreEntitySet="ProductSelling">
+          <ScalarProperty Name="ID_Selling" ColumnName="ID_Selling" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Orders">
+      <EntityTypeMapping TypeName="XPrimaryModel.vw_Orders">
+        <MappingFragment StoreEntitySet="vw_Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="Payment_Method_ID" ColumnName="Payment_Method_ID" />
+          <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
+          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Payment_Methods">
+      <EntityTypeMapping TypeName="XPrimaryModel.vw_Payment_Methods">
+        <MappingFragment StoreEntitySet="vw_Payment_Methods">
+          <ScalarProperty Name="ID_Payment_Method" ColumnName="ID_Payment_Method" />
+          <ScalarProperty Name="Payment_Type" ColumnName="Payment_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Products">
+      <EntityTypeMapping TypeName="XPrimaryModel.vw_Products">
+        <MappingFragment StoreEntitySet="vw_Products">
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Amount_In_Storage" ColumnName="Amount_In_Storage" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_ProductSelling">
+      <EntityTypeMapping TypeName="XPrimaryModel.vw_ProductSelling">
+        <MappingFragment StoreEntitySet="vw_ProductSelling">
+          <ScalarProperty Name="ID_Selling" ColumnName="ID_Selling" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

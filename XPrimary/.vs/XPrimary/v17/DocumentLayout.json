@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\K\\source\\repos\\XPrimary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|c:\\users\\k\\source\\repos\\xprimary\\xprimary\\datasetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\datasetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|c:\\users\\k\\source\\repos\\xprimary\\xprimary\\efwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\efwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|c:\\users\\k\\source\\repos\\xprimary\\xprimary\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|c:\\users\\k\\source\\repos\\xprimary\\xprimary\\efwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\efwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataSetWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml",
+              "RelativeDocumentMoniker": "XPrimary\\DataSetWindow.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml",
+              "RelativeToolTip": "XPrimary\\DataSetWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T22:49:16.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSetWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml.cs",
+              "RelativeDocumentMoniker": "XPrimary\\DataSetWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml.cs",
+              "RelativeToolTip": "XPrimary\\DataSetWindow.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T18:09:59.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EFWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\EFWindow.xaml",
+              "RelativeDocumentMoniker": "XPrimary\\EFWindow.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\EFWindow.xaml",
+              "RelativeToolTip": "XPrimary\\EFWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T22:49:20.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EFWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\EFWindow.xaml.cs",
+              "RelativeDocumentMoniker": "XPrimary\\EFWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\EFWindow.xaml.cs",
+              "RelativeToolTip": "XPrimary\\EFWindow.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwDIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:49:23.083Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

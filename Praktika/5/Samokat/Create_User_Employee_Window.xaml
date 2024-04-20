@@ -1,0 +1,39 @@
+﻿<Window x:Class="Samokat.Create_User_Employee_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Samokat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1015" Width="812" Background="#ff335f">
+    <Grid>
+        <Image Height="50" Width="250" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25" Source="logo.png"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 100, 0, 0">
+            <ComboBox x:Name="Type_Of_ComboBox" FontSize="25" materialDesign:HintAssist.Hint="Тип новой записи" HorizontalContentAlignment="Center" Height="50" Width="712" Margin="15" Foreground="Gray" SelectionChanged="Type_Of_ComboBox_SelectionChanged"/>
+
+            <TextBox x:Name="LastName_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Фамилия пользователя" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+            <TextBox x:Name="FirstName_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Имя пользователя" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+            <TextBox x:Name="MiddleName_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Отчество пользователя" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+
+            <TextBox x:Name="Username_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Логин" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+            <PasswordBox x:Name="Password_PasswordBox" FontSize="25" materialDesign:HintAssist.Hint="Пароль" HorizontalContentAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+
+            <ComboBox x:Name="Priority_Payment_Method_ComboBox" FontSize="25" materialDesign:HintAssist.Hint="Приоритетный тип платежа" HorizontalContentAlignment="Center" Height="50" Width="712" Margin="15" Foreground="Gray"/>
+            <ComboBox x:Name="Position_ComboBox" FontSize="25" materialDesign:HintAssist.Hint="Должность" HorizontalContentAlignment="Center" Height="50" Width="712" Margin="15" Foreground="Gray"/>
+
+            <TextBox x:Name="Age_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Возраст" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+            <TextBox x:Name="Experience_TextBox" FontSize="25" materialDesign:HintAssist.Hint="Опыт работы" TextAlignment="Center" Height="50" Width="712" Margin="15" Foreground="White"/>
+
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="Create_User_Employee_Button" Margin="15" FontSize="25" Width="350" Height="50" Foreground="White" Content="Добавить новую запись" Click="Create_User_Employee_Button_ClickEvent"/>
+                <Button x:Name="Close_Button" Margin="15" FontSize="25" Width="350" Height="50" Foreground="White" Content="Закрыть" Click="Close_Button_Event"/>
+            </StackPanel>
+
+        </StackPanel>
+
+     
+        
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Samokat.ControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Samokat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="815" Width="1412" Background="#ff335f">
+    <Grid>
+        <Image Height="50" Width="250" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25" Source="logo.png"/>
+
+        
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,200,0,0" Orientation="Horizontal">
+            <ComboBox x:Name="Tables_Combobox" Width="350" Height="50" Margin="15" FontSize="25" Foreground="Gray" SelectionChanged="Tables_Combobox_ChangeEvent"/>
+            <Button x:Name="ViewTable_Button" Width="350" Height="50" Margin="15" FontSize="25" Foreground="White" Content="Открыть таблицу" Click="ViewTable_ClickEvent" />
+        </StackPanel>
+
+
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="Create_User_Employee_Button" Visibility="Hidden" Width="500" Height="50" Margin="15" FontSize="25" Foreground="White" Content="Создать пользователя или сотрудника" Click="Create_User_Employee_Button_ClickEvent"/>
+            <Button Width="350" Height="50" Margin="15" FontSize="25" Foreground="White" Content="Выйти" Click="Logout_Button_Event" />
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\K\\source\\repos\\XPrimary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|c:\\users\\k\\source\\repos\\xprimary\\xprimary\\singlewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\singlewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|C:\\Users\\K\\source\\repos\\XPrimary\\xprimary\\singlewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\singlewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|C:\\Users\\K\\source\\repos\\XPrimary\\xprimary\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B52D7B01-D923-409F-8BFC-30543B7C9C30}|XPrimary\\XPrimary.csproj|solutionrelative:xprimary\\datasetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SingleWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\SingleWindow.xaml",
+              "RelativeDocumentMoniker": "XPrimary\\SingleWindow.xaml",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\SingleWindow.xaml",
+              "RelativeToolTip": "XPrimary\\SingleWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-27T20:53:40.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SingleWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\SingleWindow.xaml.cs",
+              "RelativeDocumentMoniker": "XPrimary\\SingleWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\SingleWindow.xaml.cs",
+              "RelativeToolTip": "XPrimary\\SingleWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T06:37:19.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSetWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml.cs",
+              "RelativeDocumentMoniker": "XPrimary\\DataSetWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\K\\source\\repos\\XPrimary\\XPrimary\\DataSetWindow.xaml.cs",
+              "RelativeToolTip": "XPrimary\\DataSetWindow.xaml.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAIwPgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T09:38:05.382Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
