@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #00796b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main > div {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #b2dfdb;
+    padding: 10px;
+}
+
+.main > div h2 {
+    margin-top: 0;
+}
