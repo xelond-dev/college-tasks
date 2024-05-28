@@ -1,0 +1,41 @@
+﻿<Window x:Class="client.ClientChat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client"
+        mc:Ignorable="d"
+        Title="ClientChat" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Closing="Window_Closing">
+    <Grid Background="#1F1F1F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="9*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Пользователи" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
+            <ListBox x:Name="ListOfUsers" Grid.Row="1" Foreground="White"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="UserMessages" Foreground="White"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Выйти" x:Name="ExitButton" Click="ExitButton_Click"/>
+                <TextBox Grid.Column="1" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Введите сообщение" Foreground="White" x:Name="MessageTBX"/>
+                <Button Grid.Column="2" Content="Отправка" x:Name="SendMessageButton" Click="SendMessageButton_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

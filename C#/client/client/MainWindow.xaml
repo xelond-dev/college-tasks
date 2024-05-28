@@ -1,0 +1,24 @@
+﻿<Window x:Class="client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid Background="#1F1F1F">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Добро пожаловать в сетевой чат!" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="20"/>
+        <TextBox x:Name="Username" Grid.Row="1" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Введите имя пользователя" Foreground="White" Margin="30" FontSize="15">user</TextBox>
+        <TextBox x:Name="ChatIPaddress" Grid.Row="2" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Введите IP адрес чата" Foreground="White" Margin="30" FontSize="15" PreviewTextInput="ChatIPaddress_PreviewTextInput">127.0.0.1</TextBox>
+        <Button Grid.Row="3" Margin="20" Content="Я хочу создать новый чат"/>
+        <Button Grid.Row="4" Margin="20" Content="Я хочу подключиться" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LNwrnf/bv369WiiMyE0JLrqbpL2OZh9bcZacafPpkHkDNdkjUb230mtp4pE9JFdizGyVJZxNxNsd4kQDSC1PFg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erton\\Downloads\\Telegram Desktop\\Praktos8\\Praktos5\\Praktos8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

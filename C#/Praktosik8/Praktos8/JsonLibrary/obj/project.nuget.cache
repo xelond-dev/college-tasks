@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nHEYTiopPUGkOTk6Sgt4+r2FKVO4UH7A788ryuyBguhTgBCcAf00VsfOQpqpPfH2eqkCdJd2Nbm7RT553WCp4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erton\\Downloads\\Telegram Desktop\\Praktos8\\JsonLibrary\\JsonLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erton\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

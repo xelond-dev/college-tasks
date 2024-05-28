@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WE6dJa6E3QSn7rCgaPJ/7lC1qoGaJbPxbuY58SO0aBq4S5Leq/ct7ylGF1Mcv7DdBBmZI64QTjDXKmo9gRiY7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erton\\Desktop\\мпт\\швед\\С#\\client\\client\\client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\erton\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
