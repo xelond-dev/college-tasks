@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "mptmod:block/deepslate_amber_ore"}
+  }
+}
